@@ -1,0 +1,31 @@
+<html>
+    <body>
+        <h1>Rest Api Crud</h1>
+        <h1>Add User    </h1>
+        <form action="\adduser" method="POST">
+            User Id<input type="text" id="userid" name="userid" size="20"><br>
+            Name<input type="text" id="username" name="username" size="20"><br>
+            DOB<input type="text" id="dob" name="dob" size="20"><br>
+            Profession<input type="text" id="profession" name="profession" size="20"><br>
+<button type="submit" name="submit">Add User</button>
+
+        </form>
+
+
+      <h1>Select User Details </h1>
+      <form action="/particularuser" method="POST">
+          User Id<input type="text" id="urid" name="urid" size="20"><br>
+          <button type="submit" name="sub">Select User</button>
+      </form>
+
+      <h1> Delete User Details </h1>
+      <form action="/deleteuser" method="POST">
+          User Id<input type="text" id="urid" name="urid" size="20"><br>
+          <button type="submit" name="submit">Delete User</button>
+      </form>
+      <h1> Show All Details </h1>
+      <form action="/showall" method="POST">
+          <button type="submit" name="submit">show All User</button>
+      </form>
+    </body>
+</html>
